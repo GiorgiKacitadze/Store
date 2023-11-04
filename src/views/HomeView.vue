@@ -1,18 +1,43 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <main>
+
+        <section class="top-Hover">
+            <ForSliderTOp/>
+        </section>
+
+
+
+        <section class="Products" style="margin-top: 50px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <Categorys />
+                    </div>
+                    <div class="col-9">
+                        <GetAllProduct />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Categorys from "../components/Categorys.vue";
+import GetAllProduct from "@/components/GetAllProduct.vue";
+import ForSliderTOp from '../components/ForSliderTOp.vue'
 
 export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
+    components: {
+        Categorys,
+        GetAllProduct,
+        ForSliderTOp
+    },
+};
 </script>
+
+<style>
+.text-truncate {
+    font-family: "F-F";
+}
+</style>
