@@ -10,10 +10,10 @@
         <section class="Products" style="margin-top: 50px">
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+                    <div class=" col-lg-3 col-md-12 mb-4 ">
                         <Categorys />
                     </div>
-                    <div class="col-9">
+                    <div class="col-lg-9 col-md-12 ">
                         <GetAllProduct />
                     </div>
                 </div>

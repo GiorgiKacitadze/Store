@@ -1,11 +1,11 @@
 <template>
-    <div class="container">
-        <table class="table" v-if="this.$store.state.ProductsToCart.length > 0">
+    <div class="container ">
+        <table class="table d-f-table" v-if="this.$store.state.ProductsToCart.length > 0">
             <thead>
-                <tr>
+                <tr col-12>
                     <th>პროდუქტი</th>
-                    <th>ფოტო</th>
-                    <th>ფასი</th>
+                    <th class="d-n">ფოტო</th>
+                    <th class="d-n">ფასი</th>
                     <th>რაოდენობა</th>
                     <th>ჯამი</th>
                     <th>წაშლა</th>
@@ -14,9 +14,9 @@
             <tbody>
                 <tr v-for="product in this.$store.state.ProductsToCart">
                     <td>{{ product.title }}</td>
-                    <td><img style="width: 50px; height: 30px" :src="product.thumbnail" /></td>
-                    <td>{{ product.price }}$</td>
-                    <td>
+                    <td class="d-n"><img style="width: 50px; height: 30px" :src="product.thumbnail" /></td>
+                    <td class="d-n">{{ product.price }}$</td>
+                    <td class="d-f">
                         <button @click="ChangeCount(product.id, 'decrease')" class="btn btn-danger">-</button>
                         {{ product.Counter }}
                         <button @click="ChangeCount(product.id, 'increase')" class="btn btn-success">+</button>
@@ -38,6 +38,9 @@
             კალათა ცარიელია
         </p>
     </div>
+
+
+
 </template>
 
 <script>
@@ -86,6 +89,7 @@ export default {
     font-size: 20px;
 }
 
+
 .btndel:hover {
     background-color: rgb(128, 20, 20);
     transition: 1s;
@@ -94,4 +98,24 @@ td,
 th {
     font-family: "F-2";
 }
+.product-response{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+@media (max-width:991px){
+    .d-n{
+        display: none;
+    }
+    .d-f{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+}
+
+
 </style>

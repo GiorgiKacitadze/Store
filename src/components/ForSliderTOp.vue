@@ -2,20 +2,20 @@
     <section class="s_3">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 MM">
+                <div class="col-lg-4 col-md-12 mb-4  MM">
                     <div class="s_3_img">
                         <img src="../assets/hovertop1.webp" alt="" />
                         <div class="s_3_child"></div>
                     </div>
                 </div>
-                <div class="col-lg-4 MM">
+                <div class="col-lg-4 col-md-12 mb-4 MM">
                     <div class="s_3_img">
                         <img src="../assets/hovertop2.avif" alt="" />
 
                         <div class="s_3_child"></div>
                     </div>
                 </div>
-                <div class="col-lg-4 MM">
+                <div class="col-lg-4 col-md-12 mb-4">
                     <div class="s_3_img">
                         <img src="../assets/hovertop3.webp" alt="" />
                         <div class="s_3_child"></div>

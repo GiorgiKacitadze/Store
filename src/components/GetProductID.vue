@@ -2,7 +2,7 @@
     <section class="fullinfo">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <Carousel id="gallery" :items-to-show="1" :wrap-around="false" v-model="currentSlide">
                         <Slide v-for="image in GetProductId.images" :key="image">
                             <div class="carousel__item">
@@ -26,7 +26,7 @@
                     </Carousel>
                 </div>
 
-                <div class="col-6">
+                <div class="col-lg-6 col-md-12">
                     <h2>{{ GetProductId.title }}</h2>
                     <p>
                         <span style="color: red">{{ $t("brand") }} : </span>{{ GetProductId.brand }}

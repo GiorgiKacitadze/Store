@@ -1,7 +1,7 @@
 <template>
     <div style="margin-top: 15px">
         <div class="row">
-            <div v-for="data in searchData" class="col-4" :key="data.id">
+            <div v-for="data in searchData" class="col-lg-4 col-md-12 mb-4" :key="data.id">
                 <div style="margin-bottom: 10px" class="card">
                     <div class="img-position">
                         <img

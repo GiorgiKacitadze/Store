@@ -1,5 +1,5 @@
 <template>
-    <form class="d-flex">
+    <form class="d-flex mm">
         <input
             @input="searchProduct"
             v-model="search"
@@ -24,4 +24,15 @@ export default {
         },
     },
 };
+
+
 </script>
+
+
+<style>
+@media (max-width:991px){
+  .mm{
+    margin-bottom: 10px;
+  }
+}
+</style>

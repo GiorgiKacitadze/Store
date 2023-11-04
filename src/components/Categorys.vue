@@ -1,11 +1,12 @@
 <template>
-    <div>
+    <button  @click="burgerClick()" class="burgeri"><i class="bi bi-list"></i></button>
+    <div v-if="burger===true" class="Responsive">
         <h2 style="text-align: center; color: rgb(40, 228, 15)">{{ $t("category") }}</h2>
-        <div style="margin-top: 2px" v-for="data in getCategory">
+        <div  style="margin-top: 2px" v-for="data in getCategory">
             <router-link
                 @click="scrollToTop()"
                 :to="'/' + data"
-                class="btn btn-outline-success text-truncate"
+                class="btn btn-outline-success text-truncate responsive-a"
                 style="width: 100%; color: rgb(69, 70, 69)"
                 :key="data.id"
                 >{{ $t("categories." + data) }}
@@ -20,6 +21,12 @@ import {mapGetters} from "vuex";
 const API = new MyHttpRequests();
 
 export default {
+
+    data() {
+        return {
+            burger: false
+        }
+    },
     computed: {
         ...mapGetters(["getCategory"]),
     },
@@ -33,6 +40,17 @@ export default {
             scrollToTop() {
                 window.scrollTo(0, 0);
             },
+
+            // ბურგერის გახსნა რესპონსივზე
+            
+            burgerClick(){
+                this.burger = !this.burger
+                
+                
+                 
+                 
+                 
+            }
         
     },
 
@@ -55,4 +73,36 @@ export default {
 .M_B {
     margin-bottom: 40px;
 }
+
+
+.burgeri{
+    display: none;
+}
+
+@media (max-width:991px){
+    .burgeri{
+        display: flex;
+        margin-left: auto;
+        padding: 15px 30px;
+        
+
+        
+    }
+    .Responsive{
+     display: flex;
+     flex-wrap: wrap;
+}
+.Responsive h2{
+    width: 100%;
+}
+.red{
+    color: red;
+}
+}
+
+
+
+
+
+
 </style>
