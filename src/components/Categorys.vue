@@ -7,7 +7,7 @@
                 @click="scrollToTop()"
                 :to="'/' + data"
                 class="btn btn-outline-success text-truncate responsive-a"
-                style="width: 100%; color: rgb(69, 70, 69)"
+                style="width: 100%; color: rgb(69, 70, 69) ; font-family: 'F-2';" 
                 :key="data.id"
                 >{{ $t("categories." + data) }}
             </router-link>
@@ -21,7 +21,7 @@
                 @click="scrollToTop()"
                 :to="'/' + data"
                 class="btn btn-outline-success text-truncate responsive-a"
-                style="width: 100%; color: rgb(69, 70, 69)"
+                style="width: 100%; color: rgb(69, 70, 69);font-family: 'F-2';"
                 :key="data.id"
                 >{{ $t("categories." + data) }}
             </router-link>
