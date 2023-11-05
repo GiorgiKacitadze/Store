@@ -13,6 +13,20 @@
             </router-link>
         </div>
     </div>
+
+    <div class="response-router" >
+        <h2 style="text-align: center; color: rgb(40, 228, 15)">{{ $t("category") }}</h2>
+        <div  style="margin-top: 2px" v-for="data in getCategory">
+            <router-link
+                @click="scrollToTop()"
+                :to="'/' + data"
+                class="btn btn-outline-success text-truncate responsive-a"
+                style="width: 100%; color: rgb(69, 70, 69)"
+                :key="data.id"
+                >{{ $t("categories." + data) }}
+            </router-link>
+        </div>
+    </div>
 </template>
 
 <script>
@@ -92,13 +106,11 @@ export default {
      display: flex;
      flex-wrap: wrap;
 }
-.Responsive h2{
-    width: 100%;
-}
-.red{
-    color: red;
+.response-router{
+    display: none;
 }
 }
+
 
 
 

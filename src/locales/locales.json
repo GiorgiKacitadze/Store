@@ -47,7 +47,14 @@
         "productLength" : "კალათაში პროდუქტების რაოდენობა",
         "fullPrice" : "პროდუქტების ფასი",
         "AddtoCart-validation" : "შენ უკვე გაქვს ნივთი კალათასი რაოდენობის მოსამატებლად გადადი კალათაში",
-        "comAddmessage" : "პროდუქტი წარმატებით დაემატა კალათაში"
+        "comAddmessage" : "პროდუქტი წარმატებით დაემატა კალათაში",
+        "product": "პროდუქტი",
+        "photo" : "ფოტო",
+        "allpro": "რაოდენობა",
+        "allcost": "ჯამი",
+        "delete" : "წაშლა",
+        "Why-us" : "რატომ უნდა აგვირჩიოთ ჩვენ?"
+
     },
 
     "en": {
@@ -98,7 +105,13 @@
         "productLength" : "Number of products in the cart",
         "fullPrice" : "All Product Price",
         "AddtoCart-validation" : "You already have an item in the cart. Go to cart to add quantity.",
-        "comAddmessage" : "The product has been successfully added to the cart"
+        "comAddmessage" : "The product has been successfully added to the cart",
+        "product": "Product Name",
+        "photo" : "Photo",
+        "allpro": "Quantity",
+        "allcost": "Total",
+        "delete" : "Delete",
+        "Why-us" : "Why should you choose us?"
 
     }
 }

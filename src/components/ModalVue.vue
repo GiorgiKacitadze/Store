@@ -3,12 +3,12 @@
         <table class="table d-f-table" v-if="this.$store.state.ProductsToCart.length > 0">
             <thead>
                 <tr col-12>
-                    <th>პროდუქტი</th>
-                    <th class="d-n">ფოტო</th>
-                    <th class="d-n">ფასი</th>
-                    <th>რაოდენობა</th>
-                    <th>ჯამი</th>
-                    <th>წაშლა</th>
+                    <th>{{$t('product')}}</th>
+                    <th class="d-n">{{$t('photo')}}</th>
+                    <th class="d-n">{{$t('price')}}</th>
+                    <th>{{$t('allpro')}}</th>
+                    <th>{{$t('allcost')}}</th>
+                    <th>{{$t('delete')}}</th>
                 </tr>
             </thead>
             <tbody>
